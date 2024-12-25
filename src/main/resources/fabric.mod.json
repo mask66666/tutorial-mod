@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorial-mod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "This is an tutorial mod made by 1mask_1 from a tutorial",
+	"authors": [
+		"1maks_1"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/mask66666/tutorial-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorial-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mask1.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.mask1.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"net.mask1.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorial-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
